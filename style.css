@@ -112,6 +112,7 @@ nav {
     transform: translateY(0);
 }
 .home-icons a{
+    outline: none;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -129,6 +130,7 @@ nav {
     transition: opacity 1s, transform 1s;
 }
 .cv a{
+    outline: none;
     text-decoration: none;
     color:white;
     border: 2px solid #7795db;
@@ -152,8 +154,6 @@ nav {
     transition: 0.2s ease-in-out;
 }
 @media screen and (max-width: 768px) {
-    .navbar {
-    }
     nav{
         display: flex;
         gap: 10px;
@@ -198,7 +198,7 @@ nav {
 }
     @media screen and (max-width: 433px) {
         .navbar {
-            gap: 7px;
+            gap: 9px;
         }
         nav{
             display: flex;
@@ -215,8 +215,8 @@ nav {
             position: relative;
             left:0;
             top:-16px;
-            height: 60px;
-            width: 80px;
+            height: 50px;
+            width: 64px;
             margin-right: 10px;
             margin-left: -13px;
         }
@@ -226,10 +226,10 @@ nav {
             top: -20px;
         }
         .home-content h1{
-            font-size: 35px;
+            font-size: 30px;
         }
         .home-content h3{
-            font-size: 30px;
+            font-size: 28px;
         }
         .sub-container1 {
             flex-direction: column;
