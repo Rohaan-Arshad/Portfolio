@@ -1,0 +1,247 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(252, 251, 251);
+    font-size: 22px;
+    position: relative;
+    right: 40px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.heading img {
+    height: 80px;
+    width: 140px;
+    position: relative;
+    left: 40px;
+}
+
+.sub-container1 {
+    display: flex;
+    height: 85vh; 
+    padding: 10px;
+    justify-content:space-evenly;
+    overflow-y: hidden; 
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-90deg, #1b2d54 60%, #fff );
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #7795db;
+    transition: 0.2s ease-in-out;
+    border-bottom: 2px solid white;
+}
+
+.person_image img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position:relative;
+    left: 20px;
+    border: 10px solid #7795db;
+    outline: 15px solid #1b2d54;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+.new_image .person_image img{
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-content{
+    max-width: 500px;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+.typing-cursor {
+    display: inline-block;
+    width: 8px; 
+    height: 40px; 
+    background-color: #fff; 
+    margin-right: 5px; 
+  }
+  
+  .home-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+.home-content h3 {
+    font-size: 40px;
+    color: #7795db;
+    -webkit-text-stroke: .5px #00abf0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+.active .home-content h1,
+.active .home-content h3,.active .cv a,.active .home-icons a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.new_image .person_image img{
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    color:#7795db;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    border: 1px solid white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+.cv a{
+    text-decoration: none;
+    color:white;
+    border: 2px solid #7795db;
+    padding: 10px;
+    font-size:18px;
+    border-radius: 23px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+.home-icons a:hover{
+    background-color: #7795db;
+    color:black;
+    transition: 0.2s ease-in-out;
+}
+.cv a:hover{
+    background-color: #7795db;
+    color:black;
+    border: 2px solid #7795db;
+    transition: 0.2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+    }
+    nav{
+        display: flex;
+        gap: 10px;
+    }
+    .navbar a {
+        right: 0;
+        margin-bottom: 50px;
+        font-size: 17px;
+        position: relative;
+        top: 7px;
+    }
+    .heading img {
+        position: relative;
+        left:0;
+        top:-16px;
+        height: 60px;
+        width: 80px;
+        margin-right: 10px;
+        margin-left: -13px;
+    }
+    .home-content{
+        text-align: center;
+        position: relative;
+        top: -10px;
+    }
+    .home-content h1{
+        font-size: 40px;
+    }
+    .sub-container1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .person_image img {
+        width: 230px;
+        height: 230px;
+        left: 0;
+        margin: 20px auto;
+    }
+    .home {
+        background: linear-gradient(-90deg, #1b2d54 90%, #fff );
+    }
+}
+    @media screen and (max-width: 433px) {
+        .navbar {
+            gap: 7px;
+        }
+        nav{
+            display: flex;
+            gap: 3px;
+        }
+        .navbar a {
+            right: 0;
+            margin-bottom: 50px;
+            font-size: 15px;
+            position: relative;
+            top: 7px;
+        }
+        .heading img {
+            position: relative;
+            left:0;
+            top:-16px;
+            height: 60px;
+            width: 80px;
+            margin-right: 10px;
+            margin-left: -13px;
+        }
+        .home-content{
+            text-align: center;
+            position: relative;
+            top: -20px;
+        }
+        .home-content h1{
+            font-size: 35px;
+        }
+        .home-content h3{
+            font-size: 30px;
+        }
+        .sub-container1 {
+            flex-direction: column;
+            text-align: center;
+        }
+        .person_image img {
+            width: 220px;
+            height: 220px;
+            left: 0;
+            margin: 20px auto;
+        }
+        .home {
+            background: linear-gradient(-90deg, #1b2d54 90%, #fff );
+        }
+    }
