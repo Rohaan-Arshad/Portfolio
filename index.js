@@ -100,5 +100,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
       setTimeout(function() {
           errorElement.textContent = '';
-      }, 2000);
+      }, 1500);
+      event.preventDefault();
 });

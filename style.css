@@ -764,9 +764,12 @@ form{
     }
     
 }
-    @media screen and (max-width: 433px) {
+@media screen and (max-width: 433px) and (min-width: 180px) {
         .col-md-5 h2,.col-md-7 h2{
             font-size: 32px;
+        }
+        .skil{
+            width:250px;
         }
         .project-card{
         width: 330px;
@@ -877,8 +880,10 @@ form{
         }
         .contact-button a{
             position:relative;
-            bottom:20px;
-            font-size: large;
+            bottom:25px;
+            font-size: 15px;
+            width: 20px;
+            height: 20px;
         }
         .about{
             margin-top: 10px !important;
