@@ -776,8 +776,17 @@ form{
     .projects{
         height: 2500px;
     }
+    .projects h1{
+        font-size: 35px;
+    }
     .project-card{
-        width: 320px;
+        width: 280px;
+    }
+    .project-card p{ 
+        font-size: 15px !important;
+    }
+    .project-card h2{
+       font-size: 22px;
     }
     .row{
         width: 340px;
@@ -864,16 +873,22 @@ form{
         .contact a{
             font-size:14px !important;
             position: relative;
+            bottom:10px;
         }
-        .contact-button{
-            position: relative;bottom: 20px;
+        .contact-button a{
+            position:relative;
+            bottom:20px;
+            font-size: large;
         }
         .about{
             margin-top: 10px !important;
             height: max-content;
         }
         .skills h1{
-            font-size: 40px;
+            font-size: 35px;
+        }
+        .contact-center h1{
+            font-size: 35px;
         }
     }
 
