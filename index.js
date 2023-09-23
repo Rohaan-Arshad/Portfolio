@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
 
-  var name = document.getElementById("formGroupExampleInput").value;
-  var email = document.getElementById("formGroupExampleInput2").value;
-  var msg = document.getElementById("exampleFormControlTextarea1").value;
+  document.getElementById("formGroupExampleInput").value="";
+  document.getElementById("formGroupExampleInput2").value="";
+  document.getElementById("exampleFormControlTextarea1").value="";
 
   var errorElement = document.getElementById('error');
       errorElement.textContent = 'Sent !!';

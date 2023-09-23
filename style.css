@@ -290,10 +290,11 @@ nav {
 .contact {
     height: max-content;
     margin-top: 10px;
+    overflow-y:none;
 }
 .contact-center{
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
     padding: 45px;
     border-radius: 0;
     display: flex;
@@ -303,7 +304,7 @@ nav {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
-    overflow-y:hidden;
+    overflow-y:none;
 }
 .contact h1{
     font-size: 45px;
@@ -381,7 +382,7 @@ color: #1b2d54;
     flex-direction: column;
     gap: 25px;
 }
-.mb-3 input{
+.mb-3 input {
 width: 400px;
 height: 35px;
 font-size: 16px;
@@ -391,11 +392,8 @@ height: 35px;
     width: 400px;
 height: 35px;
 font-size: 16px;
-font-weight: bold;
-height: 35px;
 height: 80px;
-    }
-
+}
     .d-flex p {
         display: flex;
         flex-direction: column;
@@ -438,9 +436,7 @@ height: 80px;
     background-color: black;
     color: white;
     padding: 5px;
-    position: relative;
-    bottom: 15px;
-
+    width: 99.3%;
 }
 #error{
     color: red;
@@ -895,6 +891,11 @@ form{
         .contact-center h1{
             font-size: 35px;
         }
+        .footer{
+            width: 97%;
+            font-size: 14px;
+        }
+
     }
 
     
