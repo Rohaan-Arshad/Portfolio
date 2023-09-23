@@ -895,7 +895,14 @@ form{
             width: 97.2%;
             font-size: 14px;
         }
-
+        .col-md-7 h2{position: relative;
+            left: 18px;}
+        #sendd{
+            align-self: center;
+            width: 100px;
+            position: relative;
+            left: 18px;
+        }
     }
 
     
